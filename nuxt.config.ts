@@ -36,7 +36,8 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@pinia/nuxt',
     '@vueuse/nuxt',
-    '@nuxt/eslint',
+    // @nuxt/eslint é apenas para dev — não carregar em produção
+    ...(process.env.NODE_ENV !== 'production' ? ['@nuxt/eslint'] : []),
     '@nuxtjs/color-mode',
   ],
 
