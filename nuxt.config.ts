@@ -183,6 +183,15 @@ export default defineNuxtConfig({
           content: 'telephone=no',
         },
       ],
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=AW-980077552',
+          async: true,
+        },
+        {
+          innerHTML: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'AW-980077552');`,
+        },
+      ],
       link: [
         {
           rel: 'icon',
