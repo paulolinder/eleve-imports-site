@@ -12,9 +12,12 @@ let _storage: Storage | null = null
 function getClient(): Client {
   if (!_client) {
     const config = useRuntimeConfig()
+    const ep = config.public.appwriteEndpoint.replace(/\/$/, '')
+    const fullEndpoint = ep.endsWith('/v1') ? ep : `${ep}/v1`
+
     _client = new Client()
     _client
-      .setEndpoint(config.public.appwriteEndpoint)
+      .setEndpoint(fullEndpoint)
       .setProject(config.public.appwriteProjectId)
   }
   return _client

@@ -15,9 +15,12 @@ function getServerClient(): Client {
       throw new Error('[Appwrite] APPWRITE_API_KEY não configurada no ambiente.')
     }
 
+    const endpoint = config.appwriteEndpoint.replace(/\/$/, '')
+    const fullEndpoint = endpoint.endsWith('/v1') ? endpoint : `${endpoint}/v1`
+
     _serverClient = new Client()
     _serverClient
-      .setEndpoint(config.appwriteEndpoint)
+      .setEndpoint(fullEndpoint)
       .setProject(config.appwriteProjectId)
       .setKey(config.appwriteApiKey)
   }

@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(gh --version)",
+      "Bash(gh auth:*)",
+      "Bash(git --version)",
+      "Bash(npm view:*)",
+      "Bash(npm install:*)",
+      "Bash(git init:*)",
+      "Bash(git config:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(gh repo:*)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git merge:*)",
+      "Bash(npm run:*)",
+      "Bash(cp -r /c/Users/Paulo/Desktop/Projetos/sites/EleveImports/data /c/Users/Paulo/Desktop/Projetos/sites/EleveImports/app/data)",
+      "Bash(cp -r /c/Users/Paulo/Desktop/Projetos/sites/EleveImports/lib /c/Users/Paulo/Desktop/Projetos/sites/EleveImports/app/lib)",
+      "Bash(cp -r /c/Users/Paulo/Desktop/Projetos/sites/EleveImports/types /c/Users/Paulo/Desktop/Projetos/sites/EleveImports/app/types)",
+      "Bash(grep -q \"^dist/$\" /c/Users/Paulo/Desktop/Projetos/sites/EleveImports/.gitignore)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git commit:*)",
+      "Skill(update-config)"
+    ]
+  }
+}
