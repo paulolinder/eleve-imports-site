@@ -10,7 +10,7 @@ defineProps<Props>()
 
 <template>
   <article
-    class="group relative flex flex-col overflow-hidden rounded-2xl bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/8 hover:border-gold-200"
+    class="group relative flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-dark-600 border border-gray-100 dark:border-dark-500 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/8 hover:border-gold-200 dark:hover:border-gold-700"
   >
     <!-- Badges -->
     <div class="absolute left-3 top-3 z-10 flex flex-col gap-1.5">
@@ -48,13 +48,13 @@ defineProps<Props>()
 
       <!-- Nome -->
       <NuxtLink :to="`/catalogo/${product.slug}`" class="mb-2 block">
-        <h3 class="font-semibold text-gray-900 line-clamp-2 leading-snug transition-colors group-hover:text-gold-700">
+        <h3 class="font-semibold text-gray-900 dark:text-gray-100 line-clamp-2 leading-snug transition-colors group-hover:text-gold-700 dark:group-hover:text-gold-400">
           {{ product.name }}
         </h3>
       </NuxtLink>
 
       <!-- Descrição curta -->
-      <p class="text-sm text-gray-600 line-clamp-2 leading-relaxed flex-1">
+      <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed flex-1">
         {{ product.shortDescription }}
       </p>
 

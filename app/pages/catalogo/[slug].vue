@@ -75,7 +75,7 @@ const selectedImage = ref(0)
     <!-- Produto -->
     <div v-else-if="product">
       <!-- Breadcrumb + Header simples -->
-      <div class="border-b border-gray-100 bg-gray-50">
+      <div class="border-b border-gray-100 dark:border-dark-600 bg-gray-50 dark:bg-dark-700">
         <div class="container-site py-4">
           <nav class="flex items-center gap-2 text-sm text-gray-500" aria-label="Breadcrumb">
             <NuxtLink to="/" class="hover:text-gray-600 transition-colors">Início</NuxtLink>
@@ -99,7 +99,7 @@ const selectedImage = ref(0)
         <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
           <!-- Galeria de imagens -->
           <div>
-            <div class="aspect-product overflow-hidden rounded-2xl bg-gray-50 border border-gray-100">
+            <div class="aspect-product overflow-hidden rounded-2xl bg-gray-50 dark:bg-dark-700 border border-gray-100 dark:border-dark-600">
               <img
                 :src="product.images[selectedImage] ?? product.thumbnailUrl ?? '/images/placeholder-product.svg'"
                 :alt="`${product.name} - imagem ${selectedImage + 1}`"
@@ -143,13 +143,13 @@ const selectedImage = ref(0)
             </div>
 
             <!-- Marca + Nome -->
-            <span class="text-sm text-gray-600 font-medium mb-1">{{ product.brand }}</span>
-            <h1 class="font-display text-2xl font-bold text-gray-900 sm:text-3xl leading-tight mb-4">
+            <span class="text-sm text-gray-600 dark:text-gray-400 font-medium mb-1">{{ product.brand }}</span>
+            <h1 class="font-display text-2xl font-bold text-gray-900 dark:text-gray-50 sm:text-3xl leading-tight mb-4">
               {{ product.name }}
             </h1>
 
             <!-- Descrição curta -->
-            <p class="text-gray-600 leading-relaxed mb-6">{{ product.shortDescription }}</p>
+            <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">{{ product.shortDescription }}</p>
 
             <!-- CTA WhatsApp -->
             <a
@@ -162,18 +162,18 @@ const selectedImage = ref(0)
               <Icon name="ph:whatsapp-logo-fill" class="size-6" />
               Tenho interesse
             </a>
-            <p class="mt-3 text-sm text-gray-400">
+            <p class="mt-3 text-sm text-gray-500 dark:text-gray-400">
               <Icon name="ph:map-pin" class="size-3.5 inline -mt-0.5" />
               Atendemos em Campo Novo do Parecis - MT
             </p>
 
             <!-- Separador -->
-            <div class="my-8 border-t border-gray-100" />
+            <div class="my-8 border-t border-gray-100 dark:border-dark-600" />
 
             <!-- Descrição completa -->
             <div>
-              <h2 class="font-semibold text-gray-900 mb-3">Descrição</h2>
-              <p class="text-sm text-gray-600 leading-relaxed whitespace-pre-line">
+              <h2 class="font-semibold text-gray-900 dark:text-gray-100 mb-3">Descrição</h2>
+              <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed whitespace-pre-line">
                 {{ product.description }}
               </p>
             </div>
@@ -183,7 +183,7 @@ const selectedImage = ref(0)
               <span
                 v-for="tag in product.tags"
                 :key="tag"
-                class="rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-500"
+                class="rounded-full bg-gray-100 dark:bg-dark-600 px-3 py-1 text-xs text-gray-500 dark:text-gray-400"
               >
                 #{{ tag }}
               </span>
