@@ -9,5 +9,6 @@
       <slot />
     </main>
     <AppFooter />
+    <WhatsAppFloat />
   </div>
 </template>

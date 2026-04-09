@@ -10,10 +10,18 @@ const activeCategory = computed({
   set: (val) => router.push({ query: { ...route.query, categoria: val || undefined } }),
 })
 
+// Input local + debounce para não fazer request a cada tecla
+const searchInput = ref((route.query.busca as string) || '')
 const searchQuery = computed({
   get: () => (route.query.busca as string) || '',
   set: (val) => router.push({ query: { ...route.query, busca: val || undefined } }),
 })
+
+const debouncedSearch = useDebounceFn(() => {
+  searchQuery.value = searchInput.value
+}, 400)
+
+watch(searchInput, () => debouncedSearch())
 
 const { data: categoriesData } = useCategories()
 const categories = computed(() => categoriesData.value ?? [])
@@ -112,7 +120,7 @@ useSchemaOrg([
         <div class="ml-auto flex items-center gap-2 rounded-full border border-gray-200 px-4 py-2">
           <Icon name="ph:magnifying-glass" class="size-4 text-gray-400" />
           <input
-            v-model="searchQuery"
+            v-model="searchInput"
             type="search"
             placeholder="Buscar produto..."
             class="text-sm outline-none bg-transparent text-gray-700 placeholder:text-gray-400 w-40"
