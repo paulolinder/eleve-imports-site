@@ -92,7 +92,7 @@ export default defineNuxtConfig({
     domains: [
       'images.unsplash.com',
       'res.cloudinary.com',
-      new URL(process.env.APPWRITE_ENDPOINT || 'https://cloud.appwrite.io').hostname,
+      new URL(process.env.NUXT_APPWRITE_ENDPOINT || 'https://cloud.appwrite.io').hostname,
     ],
   },
 
@@ -124,24 +124,20 @@ export default defineNuxtConfig({
   },
 
   // Variáveis de ambiente públicas (expostas ao cliente)
+  // Nuxt sobrescreve automaticamente via env vars com prefixo NUXT_
+  // Ex: appwriteApiKey → NUXT_APPWRITE_API_KEY
+  //     public.appwriteEndpoint → NUXT_PUBLIC_APPWRITE_ENDPOINT
   runtimeConfig: {
-    // Privadas — apenas server-side
-    appwriteApiKey: process.env.APPWRITE_API_KEY || '',
-    appwriteEndpoint:
-      process.env.APPWRITE_ENDPOINT ||
-      'https://sistemas-appwrite.oczois.easypanel.host/',
-    appwriteProjectId:
-      process.env.APPWRITE_PROJECT_ID || '69cd7caa001df667ead9',
-    // Públicas — expostas ao cliente
+    // Privadas — apenas server-side (override: NUXT_APPWRITE_*)
+    appwriteApiKey: '',
+    appwriteEndpoint: 'https://sistemas-appwrite.oczois.easypanel.host/',
+    appwriteProjectId: '69cd7caa001df667ead9',
+    // Públicas — expostas ao cliente (override: NUXT_PUBLIC_*)
     public: {
-      siteUrl:
-        process.env.NUXT_PUBLIC_SITE_URL || 'https://eleveimports.com',
+      siteUrl: 'https://eleveimports.com',
       siteName: 'Eleve Imports',
-      appwriteEndpoint:
-        process.env.APPWRITE_ENDPOINT ||
-        'https://sistemas-appwrite.oczois.easypanel.host/',
-      appwriteProjectId:
-        process.env.APPWRITE_PROJECT_ID || '69cd7caa001df667ead9',
+      appwriteEndpoint: 'https://sistemas-appwrite.oczois.easypanel.host/',
+      appwriteProjectId: '69cd7caa001df667ead9',
     },
   },
 
