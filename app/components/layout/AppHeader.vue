@@ -58,7 +58,7 @@ onMounted(() => {
     <div class="container-site">
       <div class="flex h-16 items-center justify-between overflow-hidden md:h-18">
         <!-- Logo -->
-        <a href="#hero" class="flex items-center shrink-0" @click.prevent="scrollTo('#hero')">
+        <a href="#hero" class="flex items-center shrink-0" aria-label="Eleve Imports — ir para o início" @click.prevent="scrollTo('#hero')">
           <img
             :src="logoSrc"
             alt="Eleve Imports - iPhones e Perfumes Árabes em Campo Novo do Parecis"

@@ -35,7 +35,7 @@ const availabilityLabel: Record<string, string> = {
     </div>
 
     <!-- Imagem -->
-    <NuxtLink :to="`/catalogo/${product.slug}`" class="block aspect-product overflow-hidden bg-gray-100">
+    <NuxtLink :to="`/catalogo/${product.slug}`" class="block aspect-product overflow-hidden bg-gray-100" :aria-label="`Ver produto: ${product.name}`">
       <img
         :src="product.thumbnailUrl || '/images/placeholder-product.jpg'"
         :alt="product.name"

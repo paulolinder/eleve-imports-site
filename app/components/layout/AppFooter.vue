@@ -13,7 +13,7 @@ function scrollTo(hash: string) {
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
         <!-- Marca -->
         <div class="lg:col-span-1">
-          <a href="#hero" class="inline-block mb-4 cursor-pointer" @click.prevent="scrollTo('#hero')">
+          <a href="#hero" class="inline-block mb-4 cursor-pointer" aria-label="Eleve Imports — ir para o início" @click.prevent="scrollTo('#hero')">
             <img src="/logo.png" alt="Eleve Imports - Importados Premium em Campo Novo do Parecis" style="height: 44px; width: auto; display: block;" />
           </a>
           <p class="text-sm leading-relaxed max-w-xs" :style="`color: var(--footer-text)`">
