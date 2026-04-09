@@ -79,7 +79,7 @@ useSchemaOrg([
     <div class="gradient-dark py-14">
       <div class="container-site">
         <!-- Breadcrumb -->
-        <nav class="mb-4 flex items-center gap-2 text-sm text-white/40" aria-label="Breadcrumb">
+        <nav class="mb-4 flex items-center gap-2 text-sm text-white/60" aria-label="Breadcrumb">
           <NuxtLink to="/" class="hover:text-white/70 transition-colors">Início</NuxtLink>
           <Icon name="ph:caret-right" class="size-3" />
           <span class="text-white/70">Catálogo</span>

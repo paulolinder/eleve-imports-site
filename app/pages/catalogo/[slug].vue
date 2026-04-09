@@ -3,8 +3,6 @@ definePageMeta({ layout: 'default' })
 
 const route = useRoute()
 const slug = computed(() => route.params.slug as string)
-const { format } = useFormatPrice()
-
 const { data: product, status, error } = useProduct(slug)
 
 // 404 se não encontrar
@@ -79,7 +77,7 @@ const selectedImage = ref(0)
       <!-- Breadcrumb + Header simples -->
       <div class="border-b border-gray-100 bg-gray-50">
         <div class="container-site py-4">
-          <nav class="flex items-center gap-2 text-sm text-gray-400" aria-label="Breadcrumb">
+          <nav class="flex items-center gap-2 text-sm text-gray-500" aria-label="Breadcrumb">
             <NuxtLink to="/" class="hover:text-gray-600 transition-colors">Início</NuxtLink>
             <Icon name="ph:caret-right" class="size-3" />
             <NuxtLink to="/catalogo" class="hover:text-gray-600 transition-colors">Catálogo</NuxtLink>
@@ -103,7 +101,7 @@ const selectedImage = ref(0)
           <div>
             <div class="aspect-product overflow-hidden rounded-2xl bg-gray-50 border border-gray-100">
               <img
-                :src="product.images[selectedImage] ?? product.thumbnailUrl ?? '/images/placeholder-product.jpg'"
+                :src="product.images[selectedImage] ?? product.thumbnailUrl ?? '/images/placeholder-product.svg'"
                 :alt="`${product.name} - imagem ${selectedImage + 1}`"
                 class="h-full w-full object-cover"
                 width="600"
@@ -145,7 +143,7 @@ const selectedImage = ref(0)
             </div>
 
             <!-- Marca + Nome -->
-            <span class="text-sm text-gray-400 font-medium mb-1">{{ product.brand }}</span>
+            <span class="text-sm text-gray-600 font-medium mb-1">{{ product.brand }}</span>
             <h1 class="font-display text-2xl font-bold text-gray-900 sm:text-3xl leading-tight mb-4">
               {{ product.name }}
             </h1>
@@ -153,18 +151,9 @@ const selectedImage = ref(0)
             <!-- Descrição curta -->
             <p class="text-gray-600 leading-relaxed mb-6">{{ product.shortDescription }}</p>
 
-            <!-- Preço -->
-            <div class="mb-8">
-              <span v-if="product.priceOriginal" class="text-sm text-gray-400 line-through block mb-1">
-                De {{ format(product.priceOriginal) }}
-              </span>
-              <span class="text-4xl font-bold text-gray-900">{{ format(product.price) }}</span>
-              <span class="text-sm text-gray-400 ml-2">à vista</span>
-            </div>
-
             <!-- CTA WhatsApp -->
             <a
-              :href="`https://wa.me/5565996881272?text=${encodeURIComponent(`Olá! Tenho interesse no ${product.name} (${format(product.price)}). Ref: ${product.slug}`)}`"
+              :href="`https://wa.me/5565996881272?text=${encodeURIComponent(`Olá! Tenho interesse no ${product.name}. Ref: ${product.slug}`)}`"
               target="_blank"
               rel="noopener noreferrer"
               class="flex w-full items-center justify-center gap-3 rounded-xl bg-green-500 px-6 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-green-400 hover:shadow-lg hover:shadow-green-500/25 active:scale-[0.98] sm:w-auto sm:px-8"

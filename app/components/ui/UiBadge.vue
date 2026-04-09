@@ -6,11 +6,11 @@ interface Props {
 withDefaults(defineProps<Props>(), { variant: 'gold' })
 
 const variantClasses: Record<string, string> = {
-  gold: 'bg-gold-500/10 text-gold-400 border border-gold-500/20',
-  green: 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20',
-  red: 'bg-red-500/10 text-red-400 border border-red-500/20',
-  dark: 'bg-dark-500/80 text-white/70 border border-white/10',
-  new: 'bg-blue-500/10 text-blue-400 border border-blue-500/20',
+  gold: 'bg-gold-100 text-gold-800 border border-gold-200',
+  green: 'bg-emerald-100 text-emerald-700 border border-emerald-200',
+  red: 'bg-red-100 text-red-700 border border-red-200',
+  dark: 'bg-dark-500/80 text-white/90 border border-white/10',
+  new: 'bg-blue-100 text-blue-700 border border-blue-200',
 }
 </script>
 
