@@ -11,6 +11,9 @@ export default defineNuxtConfig({
   // Nitro preset para Cloudflare Pages
   nitro: {
     preset: 'cloudflare-pages',
+    // Desabilita source maps para evitar o bundle do @takumi-rs/wasm (5MB)
+    // que causa erro de private class member no Cloudflare Workers runtime
+    sourceMap: false,
     prerender: {
       crawlLinks: true,
       routes: ['/', '/catalogo', '/sobre', '/contato'],
@@ -21,7 +24,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true },
     '/catalogo': { prerender: true },
-    '/catalogo/**': { swr: 3600 }, // 1 hora de cache
+    '/catalogo/**': { prerender: true }, // prerender em vez de swr para evitar Worker
     '/sobre': { prerender: true },
     '/contato': { prerender: true },
     '/api/**': { cors: true },
@@ -111,6 +114,12 @@ export default defineNuxtConfig({
   // Open Graph / SEO global
   seo: {
     redirectToCanonicalSiteUrl: true,
+  },
+
+  // Desabilita OG image dinâmico — usa @takumi-rs/wasm (5MB) que quebra o Worker do Cloudflare
+  // OG images são definidas estaticamente via useSeoMeta({ ogImage: '...' }) em cada página
+  ogImage: {
+    enabled: false,
   },
 
   // Sitemap
