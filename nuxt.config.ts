@@ -8,11 +8,9 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  // Nitro preset para Cloudflare Pages
+  // Nitro preset para Cloudflare Pages (estático — sem Worker, sem erro unenv)
   nitro: {
-    preset: 'cloudflare-pages',
-    // Desabilita source maps para evitar o bundle do @takumi-rs/wasm (5MB)
-    // que causa erro de private class member no Cloudflare Workers runtime
+    preset: 'cloudflare-pages-static',
     sourceMap: false,
     prerender: {
       crawlLinks: true,
@@ -27,7 +25,6 @@ export default defineNuxtConfig({
     '/catalogo/**': { prerender: true }, // prerender em vez de swr para evitar Worker
     '/sobre': { prerender: true },
     '/contato': { prerender: true },
-    '/api/**': { cors: true },
     '/admin/**': { ssr: false },
   },
 
