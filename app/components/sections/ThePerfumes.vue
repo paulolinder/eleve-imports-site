@@ -162,7 +162,7 @@ const perfumes = [
             <span
               v-if="perfume.badgeStyle === 'gold'"
               class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold"
-              style="background: rgba(184,134,11,0.15); color: rgb(161,114,5); border: 1px solid rgba(184,134,11,0.25)"
+              style="background: rgba(184,134,11,0.15); color: rgb(133,88,0); border: 1px solid rgba(184,134,11,0.25)"
             >
               <Icon name="ph:sparkle" class="size-2.5" />
               {{ perfume.badge }}
@@ -227,6 +227,7 @@ const perfumes = [
               :href="`https://wa.me/5565996881272?text=${encodeURIComponent(perfume.waMessage)}`"
               target="_blank"
               rel="noopener noreferrer"
+              :aria-label="`Tenho interesse no ${perfume.name} ${perfume.volume}`"
               class="mt-auto flex w-full items-center justify-center gap-2 rounded-xl bg-green-500 px-4 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-green-400 hover:shadow-lg hover:shadow-green-500/20 active:scale-95"
             >
               <Icon name="ph:whatsapp-logo-fill" class="size-4" />

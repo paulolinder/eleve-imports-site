@@ -63,6 +63,8 @@ onMounted(() => {
             :src="logoSrc"
             alt="Eleve Imports - iPhones e Perfumes Árabes em Campo Novo do Parecis"
             style="height: 44px; width: auto; display: block;"
+            width="75"
+            height="44"
           />
         </a>
 

@@ -101,6 +101,8 @@ function scrollToSection(hash: string) {
               style="height: 520px; width: auto; object-fit: cover;"
               width="416"
               height="520"
+              fetchpriority="high"
+              loading="eager"
             />
 
             <!-- Badge flutuante — Garantia -->

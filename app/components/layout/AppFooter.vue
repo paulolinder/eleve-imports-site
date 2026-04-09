@@ -14,7 +14,7 @@ function scrollTo(hash: string) {
         <!-- Marca -->
         <div class="lg:col-span-1">
           <a href="#hero" class="inline-block mb-4 cursor-pointer" aria-label="Eleve Imports — ir para o início" @click.prevent="scrollTo('#hero')">
-            <img src="/logo.png" alt="Eleve Imports - Importados Premium em Campo Novo do Parecis" style="height: 44px; width: auto; display: block;" />
+            <img src="/logo.png" alt="Eleve Imports - Importados Premium em Campo Novo do Parecis" style="height: 44px; width: auto; display: block;" width="75" height="44" />
           </a>
           <p class="text-sm leading-relaxed max-w-xs" :style="`color: var(--footer-text)`">
             Importados premium em Campo Novo do Parecis. iPhones originais e perfumes árabes

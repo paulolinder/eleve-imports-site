@@ -148,6 +148,7 @@ const iphones = [
               :href="`https://wa.me/5565996881272?text=${encodeURIComponent(phone.waMessage)}`"
               target="_blank"
               rel="noopener noreferrer"
+              :aria-label="`Tenho interesse no ${phone.name} ${phone.storage}`"
               class="mt-auto flex w-full items-center justify-center gap-2 rounded-xl bg-green-500 px-4 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-green-400 hover:shadow-lg hover:shadow-green-500/20 active:scale-95"
             >
               <Icon name="ph:whatsapp-logo-fill" class="size-4" />

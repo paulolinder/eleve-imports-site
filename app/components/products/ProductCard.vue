@@ -85,6 +85,7 @@ const availabilityLabel: Record<string, string> = {
           :href="`https://wa.me/5565996881272?text=Olá! Tenho interesse no ${encodeURIComponent(product.name)} (${format(product.price)})`"
           target="_blank"
           rel="noopener noreferrer"
+          :aria-label="`Consultar ${product.name} no WhatsApp`"
           class="inline-flex items-center gap-1.5 rounded-lg bg-green-500 px-3 py-1.5 text-xs font-semibold text-white transition-all duration-200 hover:bg-green-400 hover:shadow-md active:scale-95"
           :class="product.availability !== 'available' ? 'opacity-50 pointer-events-none' : ''"
         >
