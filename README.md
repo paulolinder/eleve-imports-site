@@ -167,7 +167,7 @@ O output será gerado em `.output/`.
 |---|---|
 | Framework preset | Nuxt.js |
 | Build command | `npm run build` |
-| Build output directory | `.output/public` |
+| Build output directory | `dist` |
 | Node version | `20` |
 
 ### 3. Variáveis de ambiente no Cloudflare

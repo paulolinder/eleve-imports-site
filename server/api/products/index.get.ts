@@ -1,4 +1,3 @@
-import { getAppwriteServer, Query } from '~/server/utils/appwrite'
 import { PRODUCTS, FEATURED_PRODUCTS } from '~/data/products'
 import { DATABASE_ID, COLLECTIONS, QUERY_LIMITS } from '~/lib/appwrite/collections'
 import type { Product, ProductFilters } from '~/types'

@@ -1,4 +1,3 @@
-import { getAppwriteServer, Query } from '~/server/utils/appwrite'
 import { CATEGORIES } from '~/data/categories'
 import { DATABASE_ID, COLLECTIONS } from '~/lib/appwrite/collections'
 import type { Category } from '~/types'

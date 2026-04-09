@@ -9,8 +9,8 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
+      "~/*": ["./app/*"],
+      "@/*": ["./app/*"]
     }
   },
   "include": [
@@ -18,9 +18,6 @@
     "app/**/*.d.ts",
     "app/**/*.vue",
     "server/**/*.ts",
-    "lib/**/*.ts",
-    "types/**/*.ts",
-    "data/**/*.ts",
     "nuxt.config.ts"
   ],
   "exclude": ["node_modules", ".nuxt", ".output", "dist"]
