@@ -148,30 +148,21 @@ const selectedImage = ref(0)
               <span class="text-sm text-gray-400 ml-2">à vista</span>
             </div>
 
-            <!-- CTAs -->
-            <div class="flex flex-col gap-3 sm:flex-row">
-              <UiButton
-                href="https://wa.me/5511999999999"
-                size="lg"
-                variant="primary"
-                external
-                :disabled="product.availability !== 'available'"
-                class="flex-1"
-              >
-                <Icon name="ph:whatsapp-logo" class="size-5" />
-                Comprar via WhatsApp
-              </UiButton>
-              <UiButton
-                href="https://wa.me/5511999999999"
-                size="lg"
-                variant="secondary"
-                external
-                class="flex-1 sm:flex-none"
-              >
-                <Icon name="ph:question" class="size-5" />
-                Tirar dúvida
-              </UiButton>
-            </div>
+            <!-- CTA WhatsApp -->
+            <a
+              :href="`https://wa.me/5565999999999?text=${encodeURIComponent(`Olá! Tenho interesse no ${product.name} (${format(product.price)}). Ref: ${product.slug}`)}`"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex w-full items-center justify-center gap-3 rounded-xl bg-green-500 px-6 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-green-400 hover:shadow-lg hover:shadow-green-500/25 active:scale-[0.98] sm:w-auto sm:px-8"
+              :class="product.availability !== 'available' ? 'opacity-50 pointer-events-none' : ''"
+            >
+              <Icon name="ph:whatsapp-logo-fill" class="size-6" />
+              Tenho interesse
+            </a>
+            <p class="mt-3 text-sm text-gray-400">
+              <Icon name="ph:map-pin" class="size-3.5 inline -mt-0.5" />
+              Atendemos em Campo Novo do Parecis - MT
+            </p>
 
             <!-- Separador -->
             <div class="my-8 border-t border-gray-100" />

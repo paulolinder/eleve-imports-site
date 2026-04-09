@@ -17,7 +17,7 @@ const contactOptions = [
     title: 'WhatsApp',
     description: 'A forma mais rápida de falar conosco. Respondemos em instantes.',
     action: 'Abrir WhatsApp',
-    href: 'https://wa.me/5511999999999',
+    href: 'https://wa.me/5565999999999',
     accent: 'text-green-500',
     bg: 'bg-green-500/10',
     border: 'border-green-500/20',

@@ -92,7 +92,7 @@ export default defineNuxtConfig({
     url: process.env.NUXT_PUBLIC_SITE_URL || 'https://eleveimports.com.br',
     name: 'Eleve Imports',
     description:
-      'Importados premium: iPhones originais e perfumes árabes exclusivos. Qualidade garantida, entrega segura.',
+      'Importados premium em Campo Novo do Parecis: iPhones originais e perfumes árabes exclusivos. Consulte pelo WhatsApp.',
     defaultLocale: 'pt-BR',
     language: 'pt-BR',
     indexable: process.env.NODE_ENV === 'production',

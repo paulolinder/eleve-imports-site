@@ -36,7 +36,7 @@
 
           <div class="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <UiButton
-              href="https://wa.me/5511999999999?text=Olá! Tenho interesse em produtos da Eleve Imports."
+              href="https://wa.me/5565999999999?text=Olá! Tenho interesse em produtos da Eleve Imports."
               size="lg"
               variant="primary"
               external

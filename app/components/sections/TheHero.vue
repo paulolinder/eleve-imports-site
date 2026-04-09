@@ -42,8 +42,9 @@
           </h1>
 
           <p class="mt-6 text-base leading-relaxed text-white/60 sm:text-lg max-w-lg mx-auto lg:mx-0">
-            iPhones originais desbloqueados e perfumes árabes exclusivos, importados com segurança
-            e entregues em todo o Brasil.
+            iPhones originais desbloqueados e perfumes árabes exclusivos em
+            <strong class="text-white/80">Campo Novo do Parecis</strong>.
+            Consulte disponibilidade pelo WhatsApp.
           </p>
 
           <!-- CTAs -->
@@ -53,7 +54,7 @@
               Ver catálogo
             </UiButton>
             <UiButton
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5565999999999"
               size="lg"
               variant="outline"
               external
@@ -70,8 +71,8 @@
               <span class="text-sm">100% Originais</span>
             </div>
             <div class="flex items-center gap-2 text-white/50">
-              <Icon name="ph:truck" class="size-5 text-gold-500" />
-              <span class="text-sm">Entrega Segura</span>
+              <Icon name="ph:map-pin" class="size-5 text-gold-500" />
+              <span class="text-sm">Campo Novo do Parecis</span>
             </div>
             <div class="flex items-center gap-2 text-white/50">
               <Icon name="ph:star" class="size-5 text-gold-500" />

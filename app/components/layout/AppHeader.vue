@@ -29,7 +29,8 @@ function isActive(to: string) {
 
 <template>
   <header
-    class="sticky top-0 z-50 w-full border-b border-dark-500/20 bg-dark-500/95 backdrop-blur-md"
+    class="sticky top-0 z-50 w-full border-b border-white/10 backdrop-blur-md"
+    style="background-color: rgba(13, 13, 26, 0.97)"
   >
     <div class="container-site">
       <div class="flex h-16 items-center justify-between md:h-20">
@@ -61,7 +62,7 @@ function isActive(to: string) {
         <!-- CTA + Mobile Menu -->
         <div class="flex items-center gap-3">
           <a
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5565999999999"
             target="_blank"
             rel="noopener noreferrer"
             class="hidden sm:inline-flex items-center gap-2 rounded-lg bg-gold-500 px-4 py-2 text-sm font-semibold text-dark-500 transition-all duration-200 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/25 active:scale-95"
@@ -116,7 +117,7 @@ function isActive(to: string) {
           </ul>
           <div class="mt-4 border-t border-white/10 pt-4">
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5565999999999"
               target="_blank"
               rel="noopener noreferrer"
               class="flex w-full items-center justify-center gap-2 rounded-lg bg-gold-500 px-4 py-3 text-sm font-semibold text-dark-500 transition-colors hover:bg-gold-400"

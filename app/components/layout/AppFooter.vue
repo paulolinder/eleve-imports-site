@@ -13,7 +13,7 @@ const footerLinks = {
     { label: 'Contato', to: '/contato' },
   ],
   contato: [
-    { label: 'WhatsApp', href: 'https://wa.me/5511999999999', external: true },
+    { label: 'WhatsApp', href: 'https://wa.me/5565999999999', external: true },
     { label: 'Instagram', href: 'https://instagram.com/eleveimports', external: true },
   ],
 }
@@ -31,8 +31,12 @@ const footerLinks = {
             <span class="text-2xl font-light text-white/70">Imports</span>
           </NuxtLink>
           <p class="text-sm text-white/60 leading-relaxed max-w-xs">
-            Importados premium com qualidade garantida. iPhones originais e perfumes árabes
-            exclusivos, entregues com segurança em todo o Brasil.
+            Importados premium em Campo Novo do Parecis. iPhones originais e perfumes árabes
+            exclusivos com qualidade garantida.
+          </p>
+          <p class="text-xs text-white/40 mt-2 flex items-center gap-1">
+            <Icon name="ph:map-pin" class="size-3" />
+            Campo Novo do Parecis - MT
           </p>
           <div class="flex items-center gap-3 mt-6">
             <a
@@ -45,7 +49,7 @@ const footerLinks = {
               <Icon name="ph:instagram-logo" class="size-5" />
             </a>
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5565999999999"
               target="_blank"
               rel="noopener noreferrer"
               class="flex size-10 items-center justify-center rounded-full border border-white/10 text-white/50 transition-all hover:border-gold-500/50 hover:text-gold-400"
@@ -99,7 +103,7 @@ const footerLinks = {
             Tire dúvidas, faça pedidos ou consulte disponibilidade diretamente pelo WhatsApp.
           </p>
           <a
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5565999999999"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 rounded-lg bg-gold-500 px-4 py-2.5 text-sm font-semibold text-dark-500 transition-all hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/20"

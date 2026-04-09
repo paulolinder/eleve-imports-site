@@ -72,7 +72,7 @@ const availabilityLabel: Record<string, string> = {
         {{ product.shortDescription }}
       </p>
 
-      <!-- Preço + CTA -->
+      <!-- Preço + CTA WhatsApp -->
       <div class="mt-4 flex items-end justify-between gap-2">
         <div>
           <span v-if="product.priceOriginal" class="block text-xs text-gray-400 line-through">
@@ -82,15 +82,16 @@ const availabilityLabel: Record<string, string> = {
             {{ format(product.price) }}
           </span>
         </div>
-        <UiButton
-          as="NuxtLink"
-          :to="`/catalogo/${product.slug}`"
-          variant="primary"
-          size="sm"
+        <a
+          :href="`https://wa.me/5565999999999?text=Olá! Tenho interesse no ${encodeURIComponent(product.name)} (${format(product.price)})`"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 rounded-lg bg-green-500 px-3 py-1.5 text-xs font-semibold text-white transition-all duration-200 hover:bg-green-400 hover:shadow-md active:scale-95"
           :class="product.availability !== 'available' ? 'opacity-50 pointer-events-none' : ''"
         >
-          {{ product.availability === 'available' ? 'Ver produto' : availabilityLabel[product.availability] }}
-        </UiButton>
+          <Icon name="ph:whatsapp-logo" class="size-3.5" />
+          Consultar
+        </a>
       </div>
     </div>
   </article>
