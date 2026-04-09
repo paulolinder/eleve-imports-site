@@ -4,9 +4,14 @@ definePageMeta({ layout: 'default' })
 useSeoMeta({
   title: 'Sobre a Eleve Imports — Nossa História',
   description:
-    'Conheça a Eleve Imports: especializados em importação de iPhones originais e perfumes árabes exclusivos. Qualidade, confiança e atendimento personalizado.',
+    'Conheça a Eleve Imports: especializados em importação de iPhones originais e perfumes árabes exclusivos em Campo Novo do Parecis - MT.',
   ogTitle: 'Sobre a Eleve Imports',
-  ogDescription: 'Conheça nossa história, valores e compromisso com a qualidade.',
+  ogDescription: 'Nossa história, valores e compromisso com qualidade em Campo Novo do Parecis.',
+  ogImage: '/logo-dark.png',
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://eleveimports.com/sobre' }],
 })
 
 useSchemaOrg([defineWebPage({ '@type': 'AboutPage' })])

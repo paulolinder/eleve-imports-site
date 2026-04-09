@@ -2,14 +2,40 @@
 definePageMeta({ layout: 'default' })
 
 useSeoMeta({
-  title: 'Contato | Eleve Imports',
+  title: 'Contato | Eleve Imports — Campo Novo do Parecis',
   description:
-    'Entre em contato com a Eleve Imports pelo WhatsApp ou Instagram. Atendimento rápido e personalizado.',
+    'Fale com a Eleve Imports pelo WhatsApp (65) 99688-1272. Atendimento rápido em Campo Novo do Parecis - MT.',
   ogTitle: 'Fale com a Eleve Imports',
   ogDescription: 'Atendimento via WhatsApp. Tire dúvidas, faça pedidos e consulte disponibilidade.',
+  ogImage: '/logo-dark.png',
 })
 
-useSchemaOrg([defineWebPage({ '@type': 'ContactPage' })])
+useHead({
+  link: [{ rel: 'canonical', href: 'https://eleveimports.com/contato' }],
+})
+
+useSchemaOrg([
+  defineWebPage({ '@type': 'ContactPage' }),
+  {
+    '@type': 'LocalBusiness',
+    name: 'Eleve Imports',
+    telephone: '+5565996881272',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Avenida Jatobá, 456',
+      addressLocality: 'Campo Novo do Parecis',
+      addressRegion: 'MT',
+      addressCountry: 'BR',
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+5565996881272',
+      contactType: 'customer service',
+      areaServed: 'BR',
+      availableLanguage: 'Portuguese',
+    },
+  },
+])
 
 const contactOptions = [
   {
@@ -17,7 +43,7 @@ const contactOptions = [
     title: 'WhatsApp',
     description: 'A forma mais rápida de falar conosco. Respondemos em instantes.',
     action: 'Abrir WhatsApp',
-    href: 'https://wa.me/5565999999999',
+    href: 'https://wa.me/5565996881272',
     accent: 'text-green-500',
     bg: 'bg-green-500/10',
     border: 'border-green-500/20',

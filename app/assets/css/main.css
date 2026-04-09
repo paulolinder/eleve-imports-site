@@ -66,6 +66,140 @@
 }
 
 /* ============================================================
+   THEME VARIABLES — Light & Dark
+   ============================================================ */
+
+:root {
+  /* Backgrounds */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-tertiary: #f3f4f6;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f9fafb;
+  --bg-input: #f9fafb;
+
+  /* Text */
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-tertiary: #9ca3af;
+  --text-muted: #d1d5db;
+
+  /* Borders */
+  --border-primary: rgba(0, 0, 0, 0.08);
+  --border-secondary: rgba(0, 0, 0, 0.04);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  /* Header */
+  --header-bg: rgba(255, 255, 255, 0.97);
+  --header-text: rgba(55, 65, 81, 0.85);
+  --header-border: rgba(0, 0, 0, 0.06);
+
+  /* Mobile menu */
+  --menu-bg: rgba(255, 255, 255, 0.98);
+
+  /* Card img bg */
+  --card-img-bg: #f5f3f0;
+
+  /* Badge light bg */
+  --badge-bg: rgba(0, 0, 0, 0.04);
+  --badge-text: #666;
+  --badge-border: rgba(0, 0, 0, 0.06);
+
+  /* Chips */
+  --chip-bg: rgba(0, 0, 0, 0.03);
+  --chip-text: #4b5563;
+  --chip-border: rgba(0, 0, 0, 0.06);
+
+  /* Spec badges */
+  --spec-bg: #f3f4f6;
+  --spec-text: #4b5563;
+  --spec-border: #e5e7eb;
+
+  /* Note badges */
+  --note-bg: rgba(245, 158, 11, 0.06);
+  --note-text: #92400e;
+  --note-border: rgba(245, 158, 11, 0.15);
+
+  /* Footer */
+  --footer-bg: #111827;
+  --footer-text: rgba(255, 255, 255, 0.55);
+  --footer-text-muted: rgba(255, 255, 255, 0.35);
+
+  /* Scrollbar */
+  --scrollbar-track: #f3f4f6;
+  --scrollbar-thumb: #c9a84c;
+}
+
+.dark {
+  /* Backgrounds */
+  --bg-primary: #0f1117;
+  --bg-secondary: #151821;
+  --bg-tertiary: #1c1f2e;
+  --bg-card: #181b28;
+  --bg-card-hover: #1e2235;
+  --bg-input: #1c1f2e;
+
+  /* Text */
+  --text-primary: #f1f1f4;
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --text-tertiary: rgba(255, 255, 255, 0.38);
+  --text-muted: rgba(255, 255, 255, 0.2);
+
+  /* Borders */
+  --border-primary: rgba(255, 255, 255, 0.08);
+  --border-secondary: rgba(255, 255, 255, 0.04);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+  /* Header */
+  --header-bg: rgba(15, 17, 23, 0.97);
+  --header-text: rgba(255, 255, 255, 0.75);
+  --header-border: rgba(255, 255, 255, 0.06);
+
+  /* Mobile menu */
+  --menu-bg: rgba(15, 17, 23, 0.98);
+
+  /* Card img bg */
+  --card-img-bg: #1c1f2e;
+
+  /* Badge light bg */
+  --badge-bg: rgba(255, 255, 255, 0.06);
+  --badge-text: rgba(255, 255, 255, 0.6);
+  --badge-border: rgba(255, 255, 255, 0.08);
+
+  /* Chips */
+  --chip-bg: rgba(255, 255, 255, 0.05);
+  --chip-text: rgba(255, 255, 255, 0.55);
+  --chip-border: rgba(255, 255, 255, 0.08);
+
+  /* Spec badges */
+  --spec-bg: rgba(255, 255, 255, 0.06);
+  --spec-text: rgba(255, 255, 255, 0.55);
+  --spec-border: rgba(255, 255, 255, 0.08);
+
+  /* Note badges */
+  --note-bg: rgba(245, 158, 11, 0.1);
+  --note-text: #fbbf24;
+  --note-border: rgba(245, 158, 11, 0.2);
+
+  /* Footer */
+  --footer-bg: #090b10;
+  --footer-text: rgba(255, 255, 255, 0.5);
+  --footer-text-muted: rgba(255, 255, 255, 0.25);
+
+  /* Scrollbar */
+  --scrollbar-track: #151821;
+  --scrollbar-thumb: #c9a84c;
+}
+
+/* ============================================================
    BASE STYLES
    ============================================================ */
 
@@ -76,20 +210,26 @@
 }
 
 html {
-  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   font-family: var(--font-sans);
-  background-color: #ffffff;
-  color: #1a1a1a;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ============================================================
@@ -181,17 +321,120 @@ body {
   }
 
   ::-webkit-scrollbar-track {
-    background: var(--color-dark-900);
+    background: var(--scrollbar-track);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--color-gold-700);
+    background: var(--scrollbar-thumb);
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
     background: var(--color-gold-500);
   }
+}
+
+/* ============================================================
+   HEADER — sem depender de classes Tailwind responsivas
+   ============================================================ */
+
+/* Nav desktop: hidden em mobile, flex em lg+ */
+.nav-desktop {
+  display: none;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  .nav-desktop {
+    display: flex;
+  }
+}
+
+/* Theme toggle */
+.header-theme-toggle {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* WhatsApp button - hidden mobile, visible sm+ */
+.header-wa-btn {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #22c55e;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+.header-wa-btn:hover {
+  background: #4ade80;
+}
+
+@media (min-width: 640px) {
+  .header-wa-btn {
+    display: inline-flex;
+  }
+}
+
+/* Hamburger: visible mobile, hidden lg+ */
+.header-hamburger {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (min-width: 1024px) {
+  .header-hamburger {
+    display: none;
+  }
+}
+
+/* Skip to content — acessibilidade */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  padding: 12px 24px;
+  background: #111827;
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Admin forms — forçar legibilidade */
+input, select, textarea {
+  color: #111827;
+  background: #fff;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9ca3af;
 }
 
 /* Image optimization */

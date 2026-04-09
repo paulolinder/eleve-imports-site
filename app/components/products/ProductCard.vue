@@ -35,13 +35,12 @@ const availabilityLabel: Record<string, string> = {
     </div>
 
     <!-- Imagem -->
-    <NuxtLink :to="`/catalogo/${product.slug}`" class="block aspect-product overflow-hidden bg-gray-50">
-      <NuxtImg
+    <NuxtLink :to="`/catalogo/${product.slug}`" class="block aspect-product overflow-hidden bg-gray-100">
+      <img
         :src="product.thumbnailUrl || '/images/placeholder-product.jpg'"
         :alt="product.name"
         class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         loading="lazy"
-        format="webp"
         width="400"
         height="500"
       />
@@ -83,7 +82,7 @@ const availabilityLabel: Record<string, string> = {
           </span>
         </div>
         <a
-          :href="`https://wa.me/5565999999999?text=Olá! Tenho interesse no ${encodeURIComponent(product.name)} (${format(product.price)})`"
+          :href="`https://wa.me/5565996881272?text=Olá! Tenho interesse no ${encodeURIComponent(product.name)} (${format(product.price)})`"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-1.5 rounded-lg bg-green-500 px-3 py-1.5 text-xs font-semibold text-white transition-all duration-200 hover:bg-green-400 hover:shadow-md active:scale-95"

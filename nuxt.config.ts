@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     '/sobre': { prerender: true },
     '/contato': { prerender: true },
     '/api/**': { cors: true },
+    '/admin/**': { ssr: false },
   },
 
   // Módulos
@@ -36,7 +37,15 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vueuse/nuxt',
     '@nuxt/eslint',
+    '@nuxtjs/color-mode',
   ],
+
+  // Color mode (dark/light)
+  colorMode: {
+    classSuffix: '',
+    preference: 'light',
+    fallback: 'light',
+  },
 
   // Componentes: sem prefixo de subpasta para facilitar uso
   components: [
@@ -89,7 +98,7 @@ export default defineNuxtConfig({
 
   // Configuração SEO (@nuxtjs/seo)
   site: {
-    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://eleveimports.com.br',
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://eleveimports.com',
     name: 'Eleve Imports',
     description:
       'Importados premium em Campo Novo do Parecis: iPhones originais e perfumes árabes exclusivos. Consulte pelo WhatsApp.',
@@ -106,7 +115,7 @@ export default defineNuxtConfig({
   // Sitemap
   sitemap: {
     strictNuxtContentPaths: false,
-    exclude: ['/admin/**'],
+    exclude: ['/admin/**', '/admin'],
   },
 
   // Robots
@@ -126,7 +135,7 @@ export default defineNuxtConfig({
     // Públicas — expostas ao cliente
     public: {
       siteUrl:
-        process.env.NUXT_PUBLIC_SITE_URL || 'https://eleveimports.com.br',
+        process.env.NUXT_PUBLIC_SITE_URL || 'https://eleveimports.com',
       siteName: 'Eleve Imports',
       appwriteEndpoint:
         process.env.APPWRITE_ENDPOINT ||
@@ -158,7 +167,13 @@ export default defineNuxtConfig({
       meta: [
         {
           name: 'theme-color',
-          content: '#0d0d1a',
+          content: '#ffffff',
+          media: '(prefers-color-scheme: light)',
+        },
+        {
+          name: 'theme-color',
+          content: '#0f1117',
+          media: '(prefers-color-scheme: dark)',
         },
         {
           name: 'format-detection',

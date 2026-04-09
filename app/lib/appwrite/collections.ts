@@ -8,6 +8,8 @@ export const COLLECTIONS = {
   CATEGORIES: 'categories',
   BANNERS: 'banners',
   SITE_CONFIG: 'site_config',
+  HOMEPAGE_PRODUCTS: 'homepage_products',
+  TESTIMONIALS: 'testimonials',
 } as const
 
 export type CollectionId = (typeof COLLECTIONS)[keyof typeof COLLECTIONS]

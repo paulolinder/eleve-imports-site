@@ -19,6 +19,13 @@ useSeoMeta({
   ogTitle: () => product.value?.name,
   ogDescription: () => product.value?.shortDescription,
   ogImage: () => product.value?.thumbnailUrl,
+  ogType: 'product',
+  ogLocale: 'pt_BR',
+  ogUrl: () => `https://eleveimports.com/catalogo/${slug.value}`,
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: () => `https://eleveimports.com/catalogo/${slug.value}` }],
 })
 
 useSchemaOrg([
@@ -37,6 +44,14 @@ useSchemaOrg([
                 : 'OutOfStock',
           }
         : undefined,
+  }),
+  defineBreadcrumb({
+    itemListElement: () => [
+      { position: 1, name: 'Início', item: 'https://eleveimports.com' },
+      { position: 2, name: 'Catálogo', item: 'https://eleveimports.com/catalogo' },
+      { position: 3, name: product.value?.category?.name ?? 'Categoria', item: `https://eleveimports.com/catalogo?categoria=${product.value?.category?.slug}` },
+      { position: 4, name: product.value?.name ?? 'Produto', item: `https://eleveimports.com/catalogo/${slug.value}` },
+    ],
   }),
 ])
 
@@ -87,11 +102,10 @@ const selectedImage = ref(0)
           <!-- Galeria de imagens -->
           <div>
             <div class="aspect-product overflow-hidden rounded-2xl bg-gray-50 border border-gray-100">
-              <NuxtImg
+              <img
                 :src="product.images[selectedImage] ?? product.thumbnailUrl ?? '/images/placeholder-product.jpg'"
                 :alt="`${product.name} - imagem ${selectedImage + 1}`"
                 class="h-full w-full object-cover"
-                format="webp"
                 width="600"
                 height="750"
               />
@@ -106,7 +120,7 @@ const selectedImage = ref(0)
                 :aria-label="`Ver imagem ${idx + 1} do produto`"
                 @click="selectedImage = idx"
               >
-                <NuxtImg :src="img" :alt="`Thumb ${idx + 1}`" class="h-full w-full object-cover" format="webp" width="64" height="64" />
+                <img :src="img" :alt="`Thumb ${idx + 1}`" class="h-full w-full object-cover" width="64" height="64" />
               </button>
             </div>
           </div>
@@ -150,7 +164,7 @@ const selectedImage = ref(0)
 
             <!-- CTA WhatsApp -->
             <a
-              :href="`https://wa.me/5565999999999?text=${encodeURIComponent(`Olá! Tenho interesse no ${product.name} (${format(product.price)}). Ref: ${product.slug}`)}`"
+              :href="`https://wa.me/5565996881272?text=${encodeURIComponent(`Olá! Tenho interesse no ${product.name} (${format(product.price)}). Ref: ${product.slug}`)}`"
               target="_blank"
               rel="noopener noreferrer"
               class="flex w-full items-center justify-center gap-3 rounded-xl bg-green-500 px-6 py-4 text-base font-semibold text-white transition-all duration-200 hover:bg-green-400 hover:shadow-lg hover:shadow-green-500/25 active:scale-[0.98] sm:w-auto sm:px-8"

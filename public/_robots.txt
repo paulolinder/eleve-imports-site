@@ -4,4 +4,4 @@ Allow: /
 Disallow: /api/
 Disallow: /admin/
 
-Sitemap: https://eleveimports.com.br/sitemap.xml
+Sitemap: https://eleveimports.com/sitemap.xml

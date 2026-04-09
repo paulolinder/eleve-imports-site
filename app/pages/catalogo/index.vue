@@ -47,16 +47,29 @@ useSeoMeta({
       : 'Catálogo de Produtos | Eleve Imports',
   description: () =>
     activecat.value?.seo?.description ??
-    'Explore nosso catálogo de produtos importados premium: iPhones originais e perfumes árabes exclusivos.',
+    'Catálogo de iPhones originais e perfumes árabes importados em Campo Novo do Parecis - MT.',
   ogTitle: () =>
     activecat.value ? activecat.value.name : 'Catálogo | Eleve Imports',
   ogDescription: () =>
     activecat.value?.seo?.description ??
-    'iPhones originais e perfumes árabes importados com qualidade garantida.',
+    'iPhones originais e perfumes árabes importados em Campo Novo do Parecis.',
+  ogImage: '/logo-dark.png',
+  ogType: 'website',
+  ogLocale: 'pt_BR',
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://eleveimports.com/catalogo' }],
 })
 
 useSchemaOrg([
   defineWebPage({ '@type': 'CollectionPage' }),
+  defineBreadcrumb({
+    itemListElement: [
+      { position: 1, name: 'Início', item: 'https://eleveimports.com' },
+      { position: 2, name: 'Catálogo', item: 'https://eleveimports.com/catalogo' },
+    ],
+  }),
 ])
 </script>
 
