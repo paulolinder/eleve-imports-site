@@ -1,6 +1,5 @@
 import { CATEGORIES } from '~/data/categories'
 import { DATABASE_ID, COLLECTIONS } from '~/lib/appwrite/collections'
-import type { Category } from '~/types'
 
 export default defineEventHandler(async (_event) => {
   try {
@@ -10,7 +9,7 @@ export default defineEventHandler(async (_event) => {
       Query.orderAsc('order'),
     ])
 
-    return response.documents as unknown as Category[]
+    return response.documents.map(mapCategory)
   } catch {
     return CATEGORIES.filter((c) => c.isActive)
   }

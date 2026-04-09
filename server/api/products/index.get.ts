@@ -1,6 +1,6 @@
 import { PRODUCTS, FEATURED_PRODUCTS } from '~/data/products'
 import { DATABASE_ID, COLLECTIONS, QUERY_LIMITS } from '~/lib/appwrite/collections'
-import type { Product, ProductFilters } from '~/types'
+import type { ProductFilters } from '~/types'
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
@@ -15,7 +15,6 @@ export default defineEventHandler(async (event) => {
   const page = Number(query.page) || 1
   const perPage = Math.min(Number(query.perPage) || QUERY_LIMITS.DEFAULT, QUERY_LIMITS.MAX)
 
-  // Tenta buscar do Appwrite; fallback para mock se não configurado
   try {
     const { databases } = getAppwriteServer()
     const queries: string[] = [
@@ -31,13 +30,12 @@ export default defineEventHandler(async (event) => {
     const response = await databases.listDocuments(DATABASE_ID, COLLECTIONS.PRODUCTS, queries)
 
     return {
-      items: response.documents as unknown as Product[],
+      items: response.documents.map(mapProduct),
       total: response.total,
       page,
       perPage,
     }
   } catch {
-    // Fallback para dados mock durante desenvolvimento
     let items = filters.featured ? FEATURED_PRODUCTS : PRODUCTS
 
     if (filters.category) {

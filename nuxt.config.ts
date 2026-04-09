@@ -38,6 +38,15 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
   ],
 
+  // Componentes: sem prefixo de subpasta para facilitar uso
+  components: [
+    { path: '~/components/ui', pathPrefix: false },
+    { path: '~/components/layout', pathPrefix: false },
+    { path: '~/components/sections', pathPrefix: false },
+    { path: '~/components/products', pathPrefix: false },
+    { path: '~/components', pathPrefix: false },
+  ],
+
   // CSS global
   css: ['~/assets/css/main.css'],
 

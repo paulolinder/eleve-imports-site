@@ -21,6 +21,7 @@
     "@nuxt/image": "^2.0.0",
     "@nuxtjs/seo": "^5.1.2",
     "@pinia/nuxt": "^0.11.3",
+    "@takumi-rs/core": "^1.0.0-rc.16",
     "@takumi-rs/wasm": "^1.0.0-rc.16",
     "@vueuse/core": "^14.2.1",
     "@vueuse/nuxt": "^14.2.1",
