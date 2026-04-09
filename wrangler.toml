@@ -1,0 +1,13 @@
+# Cloudflare Pages / Workers — Eleve Imports
+# Este arquivo é para configuração local e CI.
+# Secrets (APPWRITE_API_KEY) devem ser configurados via painel Cloudflare.
+
+name = "eleve-imports"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+pages_build_output_dir = ".output/public"
+
+[vars]
+NODE_ENV = "production"
+# Não adicione APPWRITE_API_KEY aqui — configure via painel como secret
