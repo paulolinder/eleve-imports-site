@@ -14,7 +14,32 @@ export default defineNuxtConfig({
     sourceMap: false,
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/catalogo', '/sobre', '/contato'],
+      routes: [
+        '/',
+        '/catalogo',
+        '/sobre',
+        '/contato',
+        // iPhones
+        '/catalogo/iphone-17-pro-max-256gb',
+        '/catalogo/iphone-17-pro-256gb',
+        '/catalogo/iphone-17-air-256gb',
+        '/catalogo/iphone-17-128gb',
+        '/catalogo/iphone-16-pro-max-256gb',
+        '/catalogo/iphone-16-128gb',
+        '/catalogo/iphone-15-pro-256gb',
+        '/catalogo/iphone-15-128gb',
+        '/catalogo/iphone-14-128gb',
+        '/catalogo/iphone-13-128gb',
+        // Perfumes
+        '/catalogo/lattafa-yara-100ml',
+        '/catalogo/mawwal-basir-100ml',
+        '/catalogo/sabah-al-ward-sugar-100ml',
+        '/catalogo/212-vip-rose-elixir-80ml',
+        '/catalogo/armaf-liquid-brun-100ml',
+        '/catalogo/oud-royal-100ml',
+        '/catalogo/mukhallat-gold-50ml',
+        '/catalogo/amber-oud-black-100ml',
+      ],
     },
   },
 
