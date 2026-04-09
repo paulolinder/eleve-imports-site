@@ -650,6 +650,359 @@ Produto original Swiss Arabian, importado e lacrado. Disponível em Campo Novo d
     createdAt: '2025-01-08T10:00:00.000Z',
     updatedAt: '2025-02-20T10:00:00.000Z',
   },
+  // Lattafa Asad
+  {
+    id: 'prod_lattafa_asad_100ml',
+    name: 'Lattafa Asad 100ml',
+    slug: 'lattafa-asad-100ml',
+    shortDescription: 'O rugido do leão em forma de perfume. Oriental amadeirado masculino com oud, couro e especiarias.',
+    description: `Lattafa Asad — "leão" em árabe — é a fragrância que define o homem moderno que não tem medo de fazer presença. Lançado pela Lattafa Perfumes dos Emirados Árabes, o Asad tornou-se rapidamente um dos perfumes masculinos mais desejados do mundo, acumulando legiões de fãs apaixonados em todos os continentes.
+
+A abertura do Asad é imponente e magnética: pimenta preta e cardamomo criam uma entrada especiada e quente que transmite confiança imediata. A bergamota adiciona um toque cítrico que equilibra a intensidade especiada, tornando a abertura complexa e viciante.
+
+O coração é onde o Asad revela sua verdadeira personalidade: oud rico e resinoso de alta qualidade se combina com notas de couro nobres e elegantes. Não é um couro agressivo — é refinado, como o interior de um automóvel de luxo. As notas de tabaco curado adicionam profundidade e sofisticação sem exageros.
+
+As notas de fundo são o segredo da longevidade extraordinária do Asad: âmbar quente e envolvente, baunilha cremosa de Madagascar e musk almiscarado criam um dry-down que permanece na pele por 12 a 16 horas. A evolução da fragrância ao longo das horas é uma experiência em si — começa com força especiada, transita para a riqueza do oud e termina em um abraço de baunilha e musk.
+
+A projeção nas primeiras 4-5 horas é forte e marcante, garantindo que você seja notado em qualquer ambiente. Na fase final, transita para uma bolha íntima e sedutora que convida as pessoas a se aproximarem.
+
+Frequentemente comparado a fragrâncias de grife que custam 10x mais, o Lattafa Asad é unanimidade nas comunidades de perfumaria online: custo-benefício imbatível, qualidade de altíssimo nível.
+
+Perfeito para ambientes corporativos, jantares especiais, noites de inverno e qualquer ocasião que exija presença e sofisticação masculina.
+
+Produto original Lattafa, importado dos Emirados Árabes, lacrado com selo de autenticidade. Disponível em Campo Novo do Parecis - MT. Consulte disponibilidade pelo WhatsApp.`,
+    price: 219,
+    priceOriginal: 279,
+    currency: 'BRL',
+    brand: 'Lattafa',
+    category: { id: 'cat_perfumes', name: 'Perfumes Árabes', slug: 'perfumes-arabes' },
+    images: ['/images/placeholder-product.svg'],
+    thumbnailUrl: '/images/placeholder-product.svg',
+    availability: 'available',
+    isFeatured: true,
+    isNew: false,
+    tags: ['lattafa', 'asad', 'masculino', 'oud', 'couro', 'especiarias', 'amadeirado', 'arabe'],
+    seo: {
+      title: 'Lattafa Asad 100ml EDP Masculino — Perfume Árabe | Eleve Imports',
+      description: 'Lattafa Asad 100ml EDP — perfume árabe masculino com oud, couro, pimenta e baunilha. Fixação de 16h+. Original Lattafa dos Emirados Árabes. Entrega em Campo Novo do Parecis - MT.',
+      keywords: ['lattafa asad', 'asad perfume', 'perfume arabe masculino', 'lattafa asad 100ml', 'comprar lattafa asad', 'perfume oud masculino', 'perfume campo novo do parecis'],
+    },
+    createdAt: '2025-08-01T10:00:00.000Z',
+    updatedAt: '2026-03-01T10:00:00.000Z',
+  },
+
+  // Lattafa Yara Moi
+  {
+    id: 'prod_lattafa_yara_moi_100ml',
+    name: 'Lattafa Yara Moi 100ml',
+    slug: 'lattafa-yara-moi-100ml',
+    shortDescription: 'A versão mais suave e romantica do Yara. Floral aquática com lírio, jasmim e musk branco.',
+    description: `Lattafa Yara Moi é a evolução do fenômeno Yara — uma interpretação mais delicada, aquática e romântica que conquista quem busca algo feminino sem ser pesado. "Moi" é a palavra francesa para "eu", e o perfume captura perfeitamente o convite à auto-expressão e individualidade.
+
+A abertura do Yara Moi é uma revelação: notas aquáticas frescas combinadas com pera suculenta e framboesa criam uma entrada luminosa e alegre, diferente da abertura mais cítrica do Yara original. A frescor aquático remete a uma manhã à beira do mar, com brisas leves e ar puro.
+
+O coração é um buquê floral extraordinário: lírio do vale em sua forma mais fresca e delicada, jasmim sambac com seu perfume inconfundível e suave, e notas de peônia que adicionam volume e suavidade. Este coração floral é mais leve e aquoso que o do Yara original — ideal para quem prefere florais delicados a composições gourmand intensas.
+
+As notas de fundo mantêm a elegância sem peso: musk branco extremamente limpo e sedutor, cedro suave que adiciona textura amadeirada mínima e âmbar branco que ilumina toda a composição. O dry-down é limpo, fresco e feminino — um rastro quase imperceptível para quem está perto.
+
+A fixação é de 8 a 10 horas, com projeção suave a moderada. É o perfume ideal para o dia a dia no trabalho, faculdade, reuniões e qualquer ambiente onde discrição elegante é valorizada. Também funciona lindamente nos dias quentes de verão, quando fragrâncias pesadas se tornam excessivas.
+
+Muitas clientes usam o Yara Moi como fragrância diurna e o Yara original para a noite, criando um duo perfeito que adapta a elegância Lattafa para qualquer momento.
+
+Produto original Lattafa, importado dos Emirados Árabes, lacrado. Disponível em Campo Novo do Parecis - MT. Consulte disponibilidade pelo WhatsApp.`,
+    price: 189,
+    priceOriginal: 239,
+    currency: 'BRL',
+    brand: 'Lattafa',
+    category: { id: 'cat_perfumes', name: 'Perfumes Árabes', slug: 'perfumes-arabes' },
+    images: ['/images/placeholder-product.svg'],
+    thumbnailUrl: '/images/placeholder-product.svg',
+    availability: 'available',
+    isFeatured: false,
+    isNew: false,
+    tags: ['lattafa', 'yara moi', 'feminino', 'floral', 'aquatico', 'lirio', 'musk', 'arabe'],
+    seo: {
+      title: 'Lattafa Yara Moi 100ml EDP Feminino — Perfume Árabe | Eleve Imports',
+      description: 'Lattafa Yara Moi 100ml EDP — perfume árabe feminino floral aquático com lírio, jasmim, musk branco e âmbar. Fixação 10h+. Original Lattafa. Entrega em Campo Novo do Parecis - MT.',
+      keywords: ['lattafa yara moi', 'yara moi perfume', 'lattafa yara moi 100ml', 'perfume arabe feminino', 'yara moi vs yara', 'comprar lattafa', 'perfume campo novo do parecis'],
+    },
+    createdAt: '2025-08-15T10:00:00.000Z',
+    updatedAt: '2026-03-01T10:00:00.000Z',
+  },
+
+  // Lattafa Khamrah
+  {
+    id: 'prod_lattafa_khamrah_100ml',
+    name: 'Lattafa Khamrah 100ml',
+    slug: 'lattafa-khamrah-100ml',
+    shortDescription: 'Oriental gourmand unissex viciante. Rum, notas defumadas, oud e especiarias árabes.',
+    description: `Lattafa Khamrah — "vinho" em árabe — é uma das fragrâncias unissex mais viciantes e comentadas do mercado árabe, e não é difícil entender por quê. Este Eau de Parfum de 100ml cria uma experiência olfativa que mistura o exótico, o gourmand e o oriental de uma forma que poucos perfumes conseguem.
+
+A abertura do Khamrah é imediatamente intrigante e provocadora: notas de rum envelhecido e ameixa criada criam uma entrada quente e envolvente, como a sensação de uma noite aconchegante junto à lareira. A nota alcoólica do rum — sofisticada, não literal — é o que diferencia o Khamrah de qualquer outro oriental no mercado.
+
+O coração é complexo e fascinante: oud de qualidade superior, especiarias orientais raras — cravo, canela e noz-moscada — se entrelaçam com notas defumadas sutis. Há também uma nota de café torrado que emerge suavemente, adicionando uma camada gourmand inesperada. Esta combinação cria um coração multifacetado que muda ligeiramente ao longo das horas, mantendo o interesse e a curiosidade.
+
+As notas de fundo são profundas e duradouras: âmbar oriental rico e quente, tabaco curado suave, musk almiscarado e baunilha de Madagascar. O dry-down do Khamrah é um dos mais comentados da Lattafa — viciante, oriental e memorável.
+
+A fixação é excepcional: 12 a 16 horas na pele, com projeção forte nas primeiras 5-6 horas. A trilha deixada é densa e marcante, do tipo que faz as pessoas virarem o pescoço quando você passa.
+
+Funciona perfeitamente tanto para homens quanto para mulheres. Recomendado para outono e inverno, noites frias, festas e qualquer evento onde uma presença olfativa marcante é desejada.
+
+Produto original Lattafa, importado dos Emirados Árabes, lacrado. Disponível em Campo Novo do Parecis - MT. Consulte pelo WhatsApp.`,
+    price: 199,
+    priceOriginal: 259,
+    currency: 'BRL',
+    brand: 'Lattafa',
+    category: { id: 'cat_perfumes', name: 'Perfumes Árabes', slug: 'perfumes-arabes' },
+    images: ['/images/placeholder-product.svg'],
+    thumbnailUrl: '/images/placeholder-product.svg',
+    availability: 'available',
+    isFeatured: true,
+    isNew: false,
+    tags: ['lattafa', 'khamrah', 'unissex', 'gourmand', 'rum', 'oud', 'defumado', 'especiarias', 'arabe'],
+    seo: {
+      title: 'Lattafa Khamrah 100ml EDP Unissex — Perfume Árabe Oriental | Eleve Imports',
+      description: 'Lattafa Khamrah 100ml EDP — perfume árabe unissex oriental gourmand com rum, oud, especiarias e âmbar. Fixação 16h+. Original Lattafa dos Emirados Árabes. Entrega em Campo Novo do Parecis - MT.',
+      keywords: ['lattafa khamrah', 'khamrah perfume', 'lattafa khamrah 100ml', 'perfume arabe unissex', 'perfume oriental gourmand', 'comprar khamrah', 'perfume campo novo do parecis'],
+    },
+    createdAt: '2025-09-01T10:00:00.000Z',
+    updatedAt: '2026-03-01T10:00:00.000Z',
+  },
+
+  // Al Haramain Amber Oud Gold Edition
+  {
+    id: 'prod_al_haramain_amber_oud_gold_60ml',
+    name: 'Al Haramain Amber Oud Gold Edition 60ml',
+    slug: 'al-haramain-amber-oud-gold-60ml',
+    shortDescription: 'O best-seller absoluto da Al Haramain. Âmbar dourado, oud, baunilha e flores brancas.',
+    description: `Al Haramain Amber Oud Gold Edition é simplesmente o perfume árabe mais elogiado e recomprado do mundo nos últimos anos. Criado pela venerável casa Al Haramain Perfumes — fundada em 1970 na Arábia Saudita — este Eau de Parfum de 60ml tornou-se uma lenda viva da perfumaria oriental moderna.
+
+A abertura do Amber Oud Gold Edition é uma declaração de luxo: âmbar dourado intenso se mistura com notas de cassis e bergamota, criando uma entrada rica, quente e imediatamente sedutor. Nas primeiras horas, a projeção é forte e marcante — é impossível não ser notado.
+
+O coração é a joia da fragrância: oud autêntico da melhor qualidade se entrelaça com rosas de Damasco aveludadas e jasmim sambac exuberante. Esta combinação floral-oudy é a essência da perfumaria árabe em sua forma mais luxuosa. Há também uma nota sutil de sândalo indiano que adiciona cremosidade e calor ao coração.
+
+As notas de fundo são o que fazem o Amber Oud Gold Edition ser completamente viciante: baunilha de Madagascar cremosa e intensa, âmbar bálsamico profundo, musk branco limpo e notas almiscaradas que criam um dry-down extraordinariamente sedutor. Horas após a aplicação, o rastro que permanece na pele é simplesmente irresistível.
+
+A fixação está entre as melhores do mercado: 14 a 20 horas na pele, com projeção moderada a forte. Em roupas, pode durar dias. O frasco dourado elegante complementa perfeitamente a suntuosidade da fragrância dentro.
+
+Indicado para todos os gêneros, funciona extraordinariamente bem no outono e inverno, mas é apreciado o ano todo. Perfeito para noites especiais, eventos importantes e qualquer momento que mereça luxo.
+
+Produto original Al Haramain, importado da Arábia Saudita, lacrado. Disponível em Campo Novo do Parecis - MT. Consulte disponibilidade pelo WhatsApp.`,
+    price: 299,
+    priceOriginal: 369,
+    currency: 'BRL',
+    brand: 'Al Haramain',
+    category: { id: 'cat_perfumes', name: 'Perfumes Árabes', slug: 'perfumes-arabes' },
+    images: ['/images/placeholder-product.svg'],
+    thumbnailUrl: '/images/placeholder-product.svg',
+    availability: 'available',
+    isFeatured: true,
+    isNew: false,
+    tags: ['al haramain', 'amber oud', 'gold edition', 'ambar', 'oud', 'baunilha', 'arabe', 'unissex'],
+    seo: {
+      title: 'Al Haramain Amber Oud Gold Edition 60ml — Perfume Árabe | Eleve Imports',
+      description: 'Al Haramain Amber Oud Gold Edition 60ml EDP — o best-seller árabe com âmbar, oud, rosa e baunilha. Fixação de até 20h. Original Al Haramain da Arábia Saudita. Campo Novo do Parecis.',
+      keywords: ['al haramain amber oud gold', 'amber oud gold edition', 'al haramain perfume', 'perfume arabe luxo', 'amber oud', 'comprar al haramain', 'perfume campo novo do parecis'],
+    },
+    createdAt: '2025-09-15T10:00:00.000Z',
+    updatedAt: '2026-03-01T10:00:00.000Z',
+  },
+
+  // Al Haramain L'Aventure
+  {
+    id: 'prod_al_haramain_laventure_100ml',
+    name: "Al Haramain L'Aventure 100ml",
+    slug: 'al-haramain-laventure-100ml',
+    shortDescription: 'Masculino aventureiro e fresco. Cítricos, madeiras, especiarias e musk. Comparado ao Sauvage.',
+    description: `Al Haramain L'Aventure é a resposta árabe ao perfume masculino fresco mais desejado do mundo — e para muitos aficionados, supera o original. Produzido pela Al Haramain Perfumes da Arábia Saudita, este Eau de Parfum de 100ml conquistou o coração de homens em todo o mundo com sua combinação de frescor, sofisticação e longevidade incomparável.
+
+A abertura é imediata e irresistível: bergamota siciliana fresca, pimenta branca quente e notas aquáticas limpas criam a primeira impressão de um homem confiante e dinâmico. A abertura do L'Aventure é universalmente elogiada — agressiva o suficiente para chamar atenção, refinada o suficiente para qualquer ambiente.
+
+O coração revela a profundidade da fragrância: cedro Atlas de qualidade superior, patchouli indonésio suave e especiarias quentes. O cedro é o protagonista do coração, dando ao L'Aventure seu caráter amadeirado e nobre que o diferencia dos frescos genéricos do mercado.
+
+As notas de fundo são onde o L'Aventure brilha absolutamente: âmbar quente, vetiver terroso e elegante, musk almiscarado branco limpo e notas de labdano. O dry-down é sofisticado, amadeirado e masculino — um rastro que permanece forte na pele por 12 a 18 horas.
+
+A comparação com o Dior Sauvage é inevitável e frequente nas comunidades de perfumaria online: o L'Aventure oferece performance igual ou superior a uma fração do preço. Para quem aprecia frescos amadeirados masculinos de alta qualidade, é uma descoberta que muda a rotina de perfumaria.
+
+Perfeito para o uso diário no trabalho, academia, encontros e qualquer situação do dia a dia que exija um homem bem perfumado e confiante.
+
+Produto original Al Haramain, importado da Arábia Saudita, lacrado. Disponível em Campo Novo do Parecis - MT. Consulte pelo WhatsApp.`,
+    price: 279,
+    priceOriginal: 339,
+    currency: 'BRL',
+    brand: 'Al Haramain',
+    category: { id: 'cat_perfumes', name: 'Perfumes Árabes', slug: 'perfumes-arabes' },
+    images: ['/images/placeholder-product.svg'],
+    thumbnailUrl: '/images/placeholder-product.svg',
+    availability: 'available',
+    isFeatured: false,
+    isNew: false,
+    tags: ['al haramain', "l'aventure", 'masculino', 'fresco', 'cedro', 'ambar', 'aquatico', 'arabe'],
+    seo: {
+      title: "Al Haramain L'Aventure 100ml EDP Masculino — Perfume Árabe | Eleve Imports",
+      description: "Al Haramain L'Aventure 100ml EDP — perfume masculino fresco e amadeirado comparado ao Dior Sauvage. Fixação de 18h+. Original Al Haramain. Entrega em Campo Novo do Parecis - MT.",
+      keywords: ["al haramain l'aventure", "laventure perfume", 'al haramain masculino', 'alternativa sauvage', 'perfume arabe masculino', 'al haramain campo novo do parecis'],
+    },
+    createdAt: '2025-10-01T10:00:00.000Z',
+    updatedAt: '2026-03-01T10:00:00.000Z',
+  },
+
+  // Rasasi Hawas
+  {
+    id: 'prod_rasasi_hawas_100ml',
+    name: 'Rasasi Hawas 100ml',
+    slug: 'rasasi-hawas-100ml',
+    shortDescription: 'Masculino aquático e amadeirado da Rasasi. Frescor marinho com sândalo e almíscar.',
+    description: `Rasasi Hawas — "sentidos" em árabe — é um dos perfumes masculinos mais premiados e recomendados da perfumaria árabe contemporânea. Produzido pela Rasasi Perfumes da Dubai, esta composição aquática-amadeirada de 100ml tornou-se um favorito absoluto de colecionadores e entusiastas de perfumaria ao redor do mundo.
+
+A abertura do Hawas é revigorante e marcante: notas aquáticas marines frescas se combinam com menta gelada e bergamota, criando uma primeira impressão vibrante que evoca a liberdade do mar aberto. É uma abertura universalmente agradável, apropriada para todos os ambientes e ocasiões.
+
+O coração é onde o Hawas revela sua complexidade: notas de maçã verde suculenta e notas florais masculinas como geranium e lavanda se entrelaçam com o persistente frescor aquático. Esta fase do perfume é extremamente versátil e agradável — fresco o suficiente para o verão, substancioso o suficiente para o inverno.
+
+As notas de fundo são o que tornam o Hawas memorável: sândalo indiano cremoso e quente, musk almiscarado branco de alta qualidade, âmbar suave e vetiver terroso. O dry-down é masculino, limpo e elegante — um rastro que convida a proximidade e recebe elogios constantes.
+
+A fixação está acima da média: 10 a 14 horas na pele, com projeção moderada a forte. É o tipo de perfume que permanece presente sem se tornar invasivo — perfeito para o ambiente de trabalho e para o uso social.
+
+Constantemente citado como uma das melhores escolhas para uso diário em toda a perfumaria árabe, o Hawas combina qualidade de ingredientes, longevidade excepcional e um preço que desafia a concorrência internacional.
+
+Produto original Rasasi, importado da Dubai, lacrado. Disponível em Campo Novo do Parecis - MT. Consulte disponibilidade pelo WhatsApp.`,
+    price: 229,
+    priceOriginal: 289,
+    currency: 'BRL',
+    brand: 'Rasasi',
+    category: { id: 'cat_perfumes', name: 'Perfumes Árabes', slug: 'perfumes-arabes' },
+    images: ['/images/placeholder-product.svg'],
+    thumbnailUrl: '/images/placeholder-product.svg',
+    availability: 'available',
+    isFeatured: false,
+    isNew: true,
+    tags: ['rasasi', 'hawas', 'masculino', 'aquatico', 'sandalo', 'musk', 'fresco', 'arabe'],
+    seo: {
+      title: 'Rasasi Hawas 100ml EDP Masculino — Perfume Árabe | Eleve Imports',
+      description: 'Rasasi Hawas 100ml EDP — perfume árabe masculino aquático e amadeirado com sândalo, musk e âmbar. Fixação 14h+. Original Rasasi da Dubai. Entrega em Campo Novo do Parecis - MT.',
+      keywords: ['rasasi hawas', 'hawas perfume', 'rasasi hawas 100ml', 'perfume arabe masculino', 'perfume aquatico arabe', 'comprar rasasi', 'perfume campo novo do parecis'],
+    },
+    createdAt: '2025-10-15T10:00:00.000Z',
+    updatedAt: '2026-03-01T10:00:00.000Z',
+  },
+
+  // Lattafa Oud Mood
+  {
+    id: 'prod_lattafa_oud_mood_100ml',
+    name: 'Lattafa Oud Mood 100ml',
+    slug: 'lattafa-oud-mood-100ml',
+    shortDescription: 'A coleção Oud Mood da Lattafa em 100ml. Oud puro, almíscar e âmbar oriental de longa duração.',
+    description: `Lattafa Oud Mood é uma das joias da coleção premium da Lattafa Perfumes — uma homenagem ao oud em sua forma mais pura e autêntica. Esta fragrância unissex de 100ml combina o melhor da tradição perfumística árabe com uma sofisticação contemporânea que agrada tanto iniciantes no universo dos ouds quanto os colecionadores mais experientes.
+
+A abertura do Oud Mood é rica e impactante: oud de alta qualidade domina a pirâmide desde o primeiro borrifo, sem rodeios ou floreios desnecessários. Para os amantes do oud, esta abertura é pura satisfação — o ingrediente mais precioso da perfumaria mundial apresentado em toda a sua glória. Notas de cardamomo e especiarias orientais complementam o oud, adicionando camadas de interesse sem distraí-lo.
+
+O coração expande e aprofunda: o oud amadurece e revela facetas mais suaves e cremosas, com notas de rosa árabe que adicionam uma dimensão floral delicada. Esta interação entre o oud e a rosa é clássica na perfumaria árabe e o Oud Mood a executa com maestria. Notas de sândalo cremoso começam a emergir, preparando o dry-down.
+
+As notas de fundo são sustentadas e duradouras: âmbar oriental profundo e bálsamico, musk almiscarado quente, baunilha sutil que arredonda as arestas do oud e notas resinosas de benjoim. O dry-down é absolutamente viciante — rico, quente, oriental e memorável.
+
+A fixação é extraordinária: 14 a 18 horas na pele. Em roupas, a fragrância pode persistir por dias. A projeção é marcante nas primeiras horas, transitando para uma presença íntima e elegante.
+
+Ideal para outono, inverno e qualquer estação para quem ama intensidade. Funciona bem para todos os gêneros.
+
+Produto original Lattafa, importado dos Emirados Árabes, lacrado. Disponível em Campo Novo do Parecis - MT via WhatsApp.`,
+    price: 209,
+    priceOriginal: 269,
+    currency: 'BRL',
+    brand: 'Lattafa',
+    category: { id: 'cat_perfumes', name: 'Perfumes Árabes', slug: 'perfumes-arabes' },
+    images: ['/images/placeholder-product.svg'],
+    thumbnailUrl: '/images/placeholder-product.svg',
+    availability: 'available',
+    isFeatured: false,
+    isNew: true,
+    tags: ['lattafa', 'oud mood', 'unissex', 'oud', 'ambar', 'musk', 'oriental', 'arabe'],
+    seo: {
+      title: 'Lattafa Oud Mood 100ml EDP — Perfume Árabe com Oud | Eleve Imports',
+      description: 'Lattafa Oud Mood 100ml EDP — perfume árabe unissex com oud puro, âmbar, rosa e musk oriental. Fixação de 18h+. Original Lattafa dos Emirados Árabes. Entrega em Campo Novo do Parecis - MT.',
+      keywords: ['lattafa oud mood', 'oud mood perfume', 'lattafa oud mood 100ml', 'perfume oud puro', 'perfume arabe oud', 'comprar lattafa oud', 'perfume campo novo do parecis'],
+    },
+    createdAt: '2025-11-01T10:00:00.000Z',
+    updatedAt: '2026-03-01T10:00:00.000Z',
+  },
+
+  // Ard Al Zaafaran Dirham
+  {
+    id: 'prod_ard_al_zaafaran_dirham_100ml',
+    name: 'Ard Al Zaafaran Dirham 100ml',
+    slug: 'ard-al-zaafaran-dirham-100ml',
+    shortDescription: 'O perfume árabe mais democrático. Floral oriental unissex com rosa, âmbar e musk.',
+    description: `Ard Al Zaafaran Dirham é o perfume que apresentou milhões de pessoas ao mundo da perfumaria árabe. Nomeado em homenagem à moeda dos Emirados Árabes, o Dirham representa o custo-benefício máximo — qualidade árabe genuína acessível a todos.
+
+A abertura do Dirham é imediatamente envolvente e agradável: bergamota fresca e notas cítricas criam uma entrada convidativa que é seguida rapidamente pela irrupção das flores brancas do coração. Esta transição rápida da abertura para o coração é característica dos perfumes árabes de alta concentração.
+
+O coração é o coração do Dirham — literalmente. Rosa árabe de qualidade, jasmim sambac e flores brancas em geral criam uma composição floral rica e sensual. Não é um floral delicado de perfume ocidental — é um floral oriental, exuberante, cheio de vida e perfume, que preenche o ambiente com graça.
+
+As notas de fundo são o que fizeram o Dirham famoso: âmbar oriental quente e envolvente, musk almiscarado cremoso e sândalo indiano que ancora toda a composição. O dry-down é doce, quente e absolutamente adorável — um dos dry-downs mais apreciados de toda a perfumaria árabe acessível.
+
+A fixação surpreende para o preço: 10 a 12 horas na pele, com projeção moderada e agradável. É o tipo de perfume que recebe elogios de todas as idades — avós, amigos, colegas de trabalho. Universal no melhor sentido da palavra.
+
+Funciona para homens e mulheres, em qualquer estação. É muitas vezes a fragrância árabe que alguém compra primeiro — e com a qual nunca se cansa.
+
+Produto original Ard Al Zaafaran, importado dos Emirados Árabes, lacrado. Disponível em Campo Novo do Parecis - MT via WhatsApp.`,
+    price: 149,
+    priceOriginal: 189,
+    currency: 'BRL',
+    brand: 'Ard Al Zaafaran',
+    category: { id: 'cat_perfumes', name: 'Perfumes Árabes', slug: 'perfumes-arabes' },
+    images: ['/images/placeholder-product.svg'],
+    thumbnailUrl: '/images/placeholder-product.svg',
+    availability: 'available',
+    isFeatured: false,
+    isNew: false,
+    tags: ['ard al zaafaran', 'dirham', 'unissex', 'floral', 'oriental', 'rosa', 'ambar', 'arabe'],
+    seo: {
+      title: 'Ard Al Zaafaran Dirham 100ml — Perfume Árabe Clássico | Eleve Imports',
+      description: 'Ard Al Zaafaran Dirham 100ml EDP — o perfume árabe mais democrático. Floral oriental unissex com rosa, âmbar e musk. Fixação 12h+. Importado e lacrado. Campo Novo do Parecis - MT.',
+      keywords: ['ard al zaafaran dirham', 'dirham perfume', 'ard al zaafaran 100ml', 'perfume arabe barato', 'perfume arabe custo beneficio', 'dirham arabe', 'perfume campo novo do parecis'],
+    },
+    createdAt: '2025-11-15T10:00:00.000Z',
+    updatedAt: '2026-03-01T10:00:00.000Z',
+  },
+
+  // Swiss Arabian Shaghaf Oud
+  {
+    id: 'prod_swiss_arabian_shaghaf_oud_75ml',
+    name: 'Swiss Arabian Shaghaf Oud 75ml',
+    slug: 'swiss-arabian-shaghaf-oud-75ml',
+    shortDescription: 'Oud puro de altíssima qualidade da Swiss Arabian. Unissex, floral e amadeirado.',
+    description: `Swiss Arabian Shaghaf Oud é a expressão máxima da expertise da Swiss Arabian em trabalhar com oud autêntico. "Shaghaf" significa "paixão" ou "amor intenso" em árabe, e esta fragrância de 75ml justifica plenamente o nome com uma composição que cativa e vicia desde o primeiro uso.
+
+A Swiss Arabian é uma das casas de perfumaria árabe mais respeitadas do mundo, conhecida por utilizar ingredientes de altíssima qualidade e por criar fragrâncias que equilibram a tradição árabe com sensibilidade contemporânea. O Shaghaf Oud é um dos melhores exemplos desta filosofia.
+
+A abertura é imediatamente luxuosa: oud de qualidade superior emerge logo de início, acompanhado por notas florais de rosa damascena que suavizam a madeira e criam um contraste elegante. O oud do Shaghaf é suave e refinado — não é o oud animal e intenso de algumas composições, mas um oud cremoso, nobre e universalmente agradável.
+
+O coração expande as dimensões da fragrância: notas de açafrão (saffron) raras adicionam um toque especiado e exótico que é exclusivo do Shaghaf Oud entre os perfumes desta faixa de preço. O açafrão — um dos ingredientes mais caros da perfumaria — eleva imediatamente a percepção de luxo da composição.
+
+As notas de fundo são profundas e sustentadas: sândalo cremoso de alta qualidade, musk branco elegante, âmbar quente e notas de resina que prolongam a fragrância por 14 a 18 horas na pele.
+
+A fixação é excepcional e a projeção, nas primeiras horas, é rica e envolvente. É um dos perfumes árabes mais bem avaliados em termos de qualidade percebida versus preço.
+
+Produto original Swiss Arabian, importado dos Emirados Árabes, lacrado. Disponível em Campo Novo do Parecis - MT via WhatsApp.`,
+    price: 289,
+    priceOriginal: 359,
+    currency: 'BRL',
+    brand: 'Swiss Arabian',
+    category: { id: 'cat_perfumes', name: 'Perfumes Árabes', slug: 'perfumes-arabes' },
+    images: ['/images/placeholder-product.svg'],
+    thumbnailUrl: '/images/placeholder-product.svg',
+    availability: 'available',
+    isFeatured: false,
+    isNew: true,
+    tags: ['swiss arabian', 'shaghaf oud', 'unissex', 'oud', 'acafrao', 'rosa', 'sandalo', 'arabe'],
+    seo: {
+      title: 'Swiss Arabian Shaghaf Oud 75ml — Perfume Árabe com Oud | Eleve Imports',
+      description: 'Swiss Arabian Shaghaf Oud 75ml EDP — oud puro com açafrão, rosa damascena e sândalo. Fixação 18h+. Original Swiss Arabian dos Emirados. Entrega em Campo Novo do Parecis - MT.',
+      keywords: ['swiss arabian shaghaf oud', 'shaghaf oud perfume', 'swiss arabian oud', 'perfume oud arabe', 'swiss arabian perfume', 'comprar swiss arabian', 'perfume campo novo do parecis'],
+    },
+    createdAt: '2025-12-01T10:00:00.000Z',
+    updatedAt: '2026-03-01T10:00:00.000Z',
+  },
+
   {
     id: 'prod_amber_oud_black_100ml',
     name: 'Amber Oud Black 100ml',
