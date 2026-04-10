@@ -3,17 +3,58 @@ definePageMeta({ layout: 'admin', middleware: 'admin-auth' })
 
 const route = useRoute()
 const router = useRouter()
-const { databases } = useAppwriteClient()
+const { databases, storage } = useAppwriteClient()
+const config = useRuntimeConfig()
 const DB = 'eleve_imports_db'
 const COL = 'products'
+const BUCKET = 'product-images'
 
 const loading = ref(true)
 const saving = ref(false)
+const uploading = ref(false)
+const uploadProgress = ref('')
 const product = ref<any>(null)
 
 const thumbUrl = ref('')
 const extraUrls = ref<string[]>([])
 const newExtra = ref('')
+const fileInput = ref<HTMLInputElement | null>(null)
+
+async function uploadFile(file: File, target: 'thumb' | 'extra') {
+  uploading.value = true
+  uploadProgress.value = 'Enviando...'
+  try {
+    const { ID } = await import('appwrite')
+    const uploaded = await storage.createFile(BUCKET, ID.unique(), file)
+    const url = `${config.public.appwriteEndpoint}v1/storage/buckets/${BUCKET}/files/${uploaded.$id}/view?project=${config.public.appwriteProjectId}`
+    if (target === 'thumb') {
+      thumbUrl.value = url
+    } else {
+      extraUrls.value.push(url)
+    }
+    uploadProgress.value = 'Enviado!'
+    setTimeout(() => { uploadProgress.value = '' }, 2000)
+  } catch (e: any) {
+    alert('Erro ao enviar foto: ' + e.message)
+    uploadProgress.value = ''
+  }
+  uploading.value = false
+}
+
+function triggerUpload(target: 'thumb' | 'extra') {
+  if (!fileInput.value) return
+  fileInput.value.dataset.target = target
+  fileInput.value.value = ''
+  fileInput.value.click()
+}
+
+function onFileSelected(e: Event) {
+  const input = e.target as HTMLInputElement
+  const file = input.files?.[0]
+  if (!file) return
+  const target = (input.dataset.target as 'thumb' | 'extra') || 'thumb'
+  uploadFile(file, target)
+}
 
 async function load() {
   loading.value = true
@@ -103,12 +144,23 @@ onMounted(load)
         <p style="font-size:12px;color:#9ca3af;margin:0 0 12px;">
           Cole a URL da imagem do produto. Funciona com links do Google Imagens, site da marca, Amazon, etc.
         </p>
-        <input
-          v-model="thumbUrl"
-          type="url"
-          placeholder="https://..."
-          style="width:100%;padding:10px 14px;border:1px solid #d1d5db;border-radius:8px;font-size:14px;color:#111827;background:#fff;box-sizing:border-box;"
-        />
+        <div style="display:flex;gap:8px;align-items:stretch;">
+          <input
+            v-model="thumbUrl"
+            type="url"
+            placeholder="https://..."
+            style="flex:1;padding:10px 14px;border:1px solid #d1d5db;border-radius:8px;font-size:14px;color:#111827;background:#fff;box-sizing:border-box;"
+          />
+          <button
+            :disabled="uploading"
+            style="padding:10px 14px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;color:#166534;white-space:nowrap;display:flex;align-items:center;gap:6px;"
+            :style="uploading ? 'opacity:0.6;cursor:not-allowed' : ''"
+            @click="triggerUpload('thumb')"
+          >
+            <Icon name="ph:upload-simple" style="width:16px;height:16px;" />
+            {{ uploading ? uploadProgress : 'Enviar arquivo' }}
+          </button>
+        </div>
 
         <!-- Preview -->
         <div v-if="thumbUrl" style="margin-top:12px;">
@@ -158,10 +210,19 @@ onMounted(load)
             @keydown.enter.prevent="addExtra"
           />
           <button
-            style="padding:10px 16px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;color:#374151;white-space:nowrap;"
+            style="padding:10px 14px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;color:#374151;white-space:nowrap;"
             @click="addExtra"
           >
-            + Adicionar
+            + URL
+          </button>
+          <button
+            :disabled="uploading"
+            style="padding:10px 14px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;color:#166534;white-space:nowrap;display:flex;align-items:center;gap:6px;"
+            :style="uploading ? 'opacity:0.6;cursor:not-allowed' : ''"
+            @click="triggerUpload('extra')"
+          >
+            <Icon name="ph:upload-simple" style="width:16px;height:16px;" />
+            Enviar
           </button>
         </div>
       </div>
@@ -176,6 +237,15 @@ onMounted(load)
           <li>Cole no campo acima</li>
         </ol>
       </div>
+
+      <!-- Hidden file input for uploads -->
+      <input
+        ref="fileInput"
+        type="file"
+        accept="image/*"
+        style="display:none;"
+        @change="onFileSelected"
+      />
 
       <!-- Botões -->
       <div style="display:flex;gap:12px;">
