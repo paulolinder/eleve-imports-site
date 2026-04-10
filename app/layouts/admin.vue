@@ -4,6 +4,7 @@ const route = useRoute()
 const menuItems = [
   { label: 'Dashboard', to: '/admin', icon: 'ph:house' },
   { label: 'Produtos', to: '/admin/produtos', icon: 'ph:package' },
+  { label: 'Catálogo', to: '/admin/catalogo', icon: 'ph:storefront' },
   { label: 'Depoimentos', to: '/admin/depoimentos', icon: 'ph:chat-circle-text' },
   { label: 'SEO', to: '/admin/seo', icon: 'ph:magnifying-glass' },
   { label: 'Configurações', to: '/admin/configuracoes', icon: 'ph:gear' },
@@ -43,7 +44,7 @@ async function logout() {
           :key="item.to"
           :to="item.to"
           style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:8px;font-size:14px;font-weight:500;transition:all 0.15s;text-decoration:none;"
-          :style="route.path === item.to
+          :style="route.path === item.to || (item.to !== '/admin' && route.path.startsWith(item.to))
             ? 'background:rgba(255,255,255,0.08);color:#fff;'
             : 'color:rgba(255,255,255,0.5);'"
         >
